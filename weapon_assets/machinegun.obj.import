@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dijkm5wqm355t"
+path="res://.godot/imported/machinegun.obj-e6cf4cd9865bb98e3cd82953beaac7ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/machinegun.obj-e6cf4cd9865bb98e3cd82953beaac7ff.mesh"]
+
+source_file="res://weapon_assets/machinegun.obj"
+dest_files=["res://.godot/imported/machinegun.obj-e6cf4cd9865bb98e3cd82953beaac7ff.mesh", "res://.godot/imported/machinegun.obj-e6cf4cd9865bb98e3cd82953beaac7ff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

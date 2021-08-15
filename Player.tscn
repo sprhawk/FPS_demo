@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://qg05bokjmwdk"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_ra32u"]
+[ext_resource type="ArrayMesh" uid="uid://bw3q1bpm1lfml" path="res://weapon_assets/shotgun.obj" id="2_tuo6o"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_75tsm"]
+radius = 0.2
+height = 0.4
+
+[sub_resource type="BoxMesh" id="BoxMesh_73358"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kh3ff"]
+radius = 0.406
+height = 1.062
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0tmg"]
+size = Vector3(0.5, 0.1, 0.5)
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.480281, -0.00988913)
+script = ExtResource( "1_ra32u" )
+
+[node name="Head" type="Node3D" parent="."]
+script = null
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.39982, 0)
+mesh = SubResource( "SphereMesh_75tsm" )
+surface_material_override/0 = null
+script = null
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.440454, 0)
+current = true
+script = null
+
+[node name="Gun" type="MeshInstance3D" parent="Head"]
+transform = Transform3D(-9.99174, 0, 0.406374, 0, 10, 0, -0.406374, 0, -9.99174, 0.111093, 0.18044, -0.238332)
+mesh = ExtResource( "2_tuo6o" )
+skeleton = NodePath("../..")
+surface_material_override/0 = null
+surface_material_override/1 = null
+surface_material_override/2 = null
+surface_material_override/3 = null
+surface_material_override/4 = null
+surface_material_override/5 = null
+surface_material_override/6 = null
+surface_material_override/7 = null
+surface_material_override/8 = null
+surface_material_override/9 = null
+surface_material_override/10 = null
+surface_material_override/11 = null
+surface_material_override/12 = null
+surface_material_override/13 = null
+surface_material_override/14 = null
+surface_material_override/15 = null
+surface_material_override/16 = null
+surface_material_override/17 = null
+surface_material_override/18 = null
+surface_material_override/19 = null
+surface_material_override/20 = null
+surface_material_override/21 = null
+surface_material_override/22 = null
+surface_material_override/23 = null
+surface_material_override/24 = null
+surface_material_override/25 = null
+surface_material_override/26 = null
+surface_material_override/27 = null
+surface_material_override/28 = null
+surface_material_override/29 = null
+surface_material_override/30 = null
+surface_material_override/31 = null
+surface_material_override/32 = null
+script = null
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource( "BoxMesh_73358" )
+surface_material_override/0 = null
+script = null
+
+[node name="Body" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0913376, 0)
+shape = SubResource( "CapsuleShape3D_kh3ff" )
+script = null
+
+[node name="Feet" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.343841, 0)
+shape = SubResource( "BoxShape3D_y0tmg" )
+script = null

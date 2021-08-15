@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtyorlt0614yy"
+path="res://.godot/imported/flamethrowerHandle.obj-10b1a676c3765dcb78888ca0a37d9949.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flamethrowerHandle.obj-10b1a676c3765dcb78888ca0a37d9949.mesh"]
+
+source_file="res://weapon_assets/flamethrowerHandle.obj"
+dest_files=["res://.godot/imported/flamethrowerHandle.obj-10b1a676c3765dcb78888ca0a37d9949.mesh", "res://.godot/imported/flamethrowerHandle.obj-10b1a676c3765dcb78888ca0a37d9949.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

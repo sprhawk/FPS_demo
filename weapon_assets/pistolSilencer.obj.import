@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ji8uaavqlly5"
+path="res://.godot/imported/pistolSilencer.obj-467717987aad5d101fbe5c7aa1fb8aca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pistolSilencer.obj-467717987aad5d101fbe5c7aa1fb8aca.mesh"]
+
+source_file="res://weapon_assets/pistolSilencer.obj"
+dest_files=["res://.godot/imported/pistolSilencer.obj-467717987aad5d101fbe5c7aa1fb8aca.mesh", "res://.godot/imported/pistolSilencer.obj-467717987aad5d101fbe5c7aa1fb8aca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

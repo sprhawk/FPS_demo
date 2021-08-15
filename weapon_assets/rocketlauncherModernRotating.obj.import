@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://0ajismhgpx6o"
+path="res://.godot/imported/rocketlauncherModernRotating.obj-b4bfba2b861a46f3e5a221a84e0bc50c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rocketlauncherModernRotating.obj-b4bfba2b861a46f3e5a221a84e0bc50c.mesh"]
+
+source_file="res://weapon_assets/rocketlauncherModernRotating.obj"
+dest_files=["res://.godot/imported/rocketlauncherModernRotating.obj-b4bfba2b861a46f3e5a221a84e0bc50c.mesh", "res://.godot/imported/rocketlauncherModernRotating.obj-b4bfba2b861a46f3e5a221a84e0bc50c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

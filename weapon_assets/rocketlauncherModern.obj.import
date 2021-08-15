@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3vdpupwpnsfh"
+path="res://.godot/imported/rocketlauncherModern.obj-c4a225f1fc2381ddfb253face3b57b33.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rocketlauncherModern.obj-c4a225f1fc2381ddfb253face3b57b33.mesh"]
+
+source_file="res://weapon_assets/rocketlauncherModern.obj"
+dest_files=["res://.godot/imported/rocketlauncherModern.obj-c4a225f1fc2381ddfb253face3b57b33.mesh", "res://.godot/imported/rocketlauncherModern.obj-c4a225f1fc2381ddfb253face3b57b33.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

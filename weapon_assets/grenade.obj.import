@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcn6ji2v1q3ju"
+path="res://.godot/imported/grenade.obj-ceee4c064b87a7f49b11f3ea381f5257.mesh"
+
+[deps]
+
+files=["res://.godot/imported/grenade.obj-ceee4c064b87a7f49b11f3ea381f5257.mesh"]
+
+source_file="res://weapon_assets/grenade.obj"
+dest_files=["res://.godot/imported/grenade.obj-ceee4c064b87a7f49b11f3ea381f5257.mesh", "res://.godot/imported/grenade.obj-ceee4c064b87a7f49b11f3ea381f5257.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

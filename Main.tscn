@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyyqxq4asv125"]
+
+[ext_resource type="PackedScene" uid="uid://qg05bokjmwdk" path="res://Player.tscn" id="1_pwsdq"]
+[ext_resource type="PackedScene" uid="uid://dlxsjmr3ciu0v" path="res://mob.tscn" id="2_kp23t"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hd8h5"]
+sky_top_color = Color(0.352941, 0.701961, 1, 1)
+sky_horizon_color = Color(0.618628, 0.705882, 0.782353, 1)
+ground_bottom_color = Color(0.121569, 0.121569, 0.129412, 1)
+ground_horizon_color = Color(0.618628, 0.705882, 0.782353, 1)
+
+[sub_resource type="Sky" id="Sky_qgbtb"]
+sky_material = SubResource( "ProceduralSkyMaterial_hd8h5" )
+
+[sub_resource type="Environment" id="Environment_6oajs"]
+background_mode = 2
+sky = SubResource( "Sky_qgbtb" )
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gq15w"]
+size = Vector2(20, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7bj05"]
+size = Vector3(20, 1, 20)
+
+[node name="Node3D" type="Node3D"]
+script = null
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( "Environment_6oajs" )
+script = null
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.832493, -0.332347, 0.443284, -0.0163895, 0.784977, 0.619308, -0.553793, -0.522834, 0.648041, 6.15463, 3.02021, 7.81406)
+shadow_enabled = true
+directional_shadow_max_distance = 250.0
+script = null
+
+[node name="Player" parent="." instance=ExtResource( "1_pwsdq" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.427865, 0.700222, 2.30668)
+
+[node name="Mob" parent="." instance=ExtResource( "2_kp23t" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.419393, 1.31058, -2.17974)
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.669829)
+script = null
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource( "PlaneMesh_gq15w" )
+surface_material_override/0 = null
+script = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.494545, 0)
+shape = SubResource( "BoxShape3D_7bj05" )
+script = null
